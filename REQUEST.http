@@ -36,11 +36,11 @@ POST {{url}}/employees HTTP/1.1
 Content-Type: application/json
 
 {
-    "FirstName": "Michel",
-    "LastName": "Marcelot",
-    "Email": "mmarcelot@gmail.com",
-    "BirthDate": "1972-03-12T14:09:03.290195+01:00",
-    "CountryId": 2
+    "FirstName": "Mickey",
+    "LastName": "Mouse",
+    "Email": "atchoum@hotmail.com",
+    "BirthDate": "1892-09-16T14:09:03.290195+01:00",
+    "CountryId": 3
 }
 ###
 
