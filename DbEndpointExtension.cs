@@ -30,7 +30,9 @@ public static class DbEndpointExtension
                             LastName TEXT,
                             Email TEXT,
                             BirthDate TEXT,
-                            CountryId INTEGER
+                            CountryId INTEGER,
+                            Smocker INTEGER ,
+                            Gender TEXT
                         );
                         DELETE FROM Employee;";
 

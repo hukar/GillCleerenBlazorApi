@@ -40,7 +40,9 @@ Content-Type: application/json
     "LastName": "Mouse",
     "Email": "atchoum@hotmail.com",
     "BirthDate": "1892-09-16T14:09:03.290195+01:00",
-    "CountryId": 3
+    "CountryId": 3,
+    "Smocker": 0,
+    "Gender": "Male"
 }
 ###
 
@@ -52,7 +54,9 @@ Content-Type: application/json
     "LastName": "Summers",
     "Email": "phoenix@gmail.com",
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
-    "CountryId": 1
+    "CountryId": 1,
+    "Smocker": 1,
+    "Gender": "Female"
 }
 
 ###
