@@ -41,7 +41,7 @@ Content-Type: application/json
     "Email": "atchoum@hotmail.com",
     "BirthDate": "1892-09-16T14:09:03.290195+01:00",
     "CountryId": 3,
-    "Smocker": 0,
+    "Smoker": false,
     "Gender": "Male"
 }
 ###
@@ -55,7 +55,7 @@ Content-Type: application/json
     "Email": "phoenix@gmail.com",
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
     "CountryId": 1,
-    "Smocker": 1,
+    "Smoker": true,
     "Gender": "Female"
 }
 
@@ -68,7 +68,9 @@ Content-Type: application/json
     "LastName": "",
     "Email": "phoenix@gmail.com",
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
-    "CountryId": 1
+    "CountryId": 1,
+    "Smoker": true,
+    "Gender": "Female"
 }
 
 ###
@@ -82,7 +84,9 @@ Content-Type: application/json
     "LastName": "",
     "Email": "rachel&co@gmail.com",
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
-    "CountryId": 1
+    "CountryId": 1,
+    "Smoker": true,
+    "Gender": "Other"
 }
 ###
 
@@ -95,5 +99,7 @@ Content-Type: application/json
     "LastName": "Friends",
     "Email": "rachel&co@gmail.com",
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
-    "CountryId": 1
+    "CountryId": 1,
+    "Smoker": true,
+    "Gender": "Male"
 }

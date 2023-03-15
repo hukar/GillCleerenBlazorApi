@@ -1,8 +1,8 @@
 namespace GillCleerenBlazorApi;
 
-public enum Gender
+public static class Gender
 {
-    Male,
-    Female,
-    Other
+    public static string Male => "Male";
+    public static string Female => "Female";
+    public static string Other => "Other";
 }

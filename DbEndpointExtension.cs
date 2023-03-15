@@ -24,17 +24,17 @@ public static class DbEndpointExtension
 
         app.MapGet("createdb", async (IDbConnection connection) =>
         {
-            var sql = @"CREATE TABLE IF NOT EXISTS Employee (
+            var sql = @"DROP TABLE IF EXISTS Employee;
+                        CREATE TABLE Employee (
                             EmployeeId INTEGER PRIMARY KEY,
                             FirstName TEXT,
                             LastName TEXT,
                             Email TEXT,
                             BirthDate TEXT,
                             CountryId INTEGER,
-                            Smocker INTEGER ,
+                            Smoker INTEGER ,
                             Gender TEXT
-                        );
-                        DELETE FROM Employee;";
+                        );";
 
             var rowsAffected = await connection.ExecuteAsync(sql);
 
