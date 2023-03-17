@@ -107,3 +107,7 @@ Content-Type: application/json
     "Gender": "Male",
     "Comment": "There are something wrong in this casttle."
 }
+
+###
+
+DELETE {{url}}/employees/2 HTTP/1.1

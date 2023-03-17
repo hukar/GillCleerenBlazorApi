@@ -78,7 +78,7 @@ public static class EmployeeEndpointExtension
         route.MapDelete("/{id:int}", async (IDbConnection connection, int id) => {
             var sql = @"DELETE FROM Employee WHERE EmployeeId = @EmployeeId";
 
-            var rowsAffected = await connection.ExecuteAsync(sql, new { id });
+            var rowsAffected = await connection.ExecuteAsync(sql, new { EmployeeId = id });
 
             return Results.Ok(rowsAffected);
         });
