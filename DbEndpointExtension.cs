@@ -33,7 +33,8 @@ public static class DbEndpointExtension
                             BirthDate TEXT,
                             CountryId INTEGER,
                             Smoker INTEGER ,
-                            Gender TEXT
+                            Gender TEXT,
+                            Comment TEXT
                         );";
 
             var rowsAffected = await connection.ExecuteAsync(sql);

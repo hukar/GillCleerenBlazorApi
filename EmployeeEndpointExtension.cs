@@ -39,8 +39,8 @@ public static class EmployeeEndpointExtension
                return Results.BadRequest(errorMessages); 
             }
             
-            var sql = @"INSERT INTO Employee (FirstName, LastName, Email, BirthDate, CountryId, Smoker, Gender)
-                VALUES (@FirstName, @LastName, @Email, @BirthDate, @CountryId, @Smoker, @Gender)";
+            var sql = @"INSERT INTO Employee (FirstName, LastName, Email, BirthDate, CountryId, Smoker, Gender, Comment)
+                VALUES (@FirstName, @LastName, @Email, @BirthDate, @CountryId, @Smoker, @Gender, @Comment)";
 
             var rowsAffected = await connection.ExecuteAsync(sql, employeeToCreate);
 
@@ -66,7 +66,8 @@ public static class EmployeeEndpointExtension
                             BirthDate = @BirthDate, 
                             CountryId = @CountryId,
                             Smoker = @Smoker,
-                            Gender = @Gender
+                            Gender = @Gender,
+                            Comment = @Comment
                         WHERE EmployeeId = @EmployeeId";
 
             var rowsAffected = await connection.ExecuteAsync(sql, employeeToUpdate);

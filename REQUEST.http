@@ -42,7 +42,8 @@ Content-Type: application/json
     "BirthDate": "1892-09-16T14:09:03.290195+01:00",
     "CountryId": 3,
     "Smoker": false,
-    "Gender": "Male"
+    "Gender": "Male",
+    "Comment": "Hey how are you ?"
 }
 ###
 
@@ -56,7 +57,8 @@ Content-Type: application/json
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
     "CountryId": 1,
     "Smoker": true,
-    "Gender": "Female"
+    "Gender": "Female",
+    "Comment": "This is a beautiful day!!"
 }
 
 ###
@@ -86,7 +88,8 @@ Content-Type: application/json
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
     "CountryId": 1,
     "Smoker": true,
-    "Gender": "Other"
+    "Gender": "Other",
+    "Comment": "What's the problem with you ..."
 }
 ###
 
@@ -101,5 +104,6 @@ Content-Type: application/json
     "BirthDate": "1981-11-23T14:09:03.290195+01:00",
     "CountryId": 1,
     "Smoker": true,
-    "Gender": "Male"
+    "Gender": "Male",
+    "Comment": "There are something wrong in this casttle."
 }

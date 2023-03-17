@@ -10,4 +10,5 @@ public class Employee
     public int CountryId { get; set; }
     public bool Smoker { get; set; }
     public string Gender { get; set; } = string.Empty;
+    public string Comment { get; set; } = string.Empty;
 }
