@@ -25,6 +25,7 @@ public static class DbEndpointExtension
         app.MapGet("createdb", async (IDbConnection connection) =>
         {
             var sql = @"DROP TABLE IF EXISTS Employee;
+                        DROP TABLE IF EXISTS File;
                         CREATE TABLE Employee (
                             EmployeeId INTEGER PRIMARY KEY,
                             FirstName TEXT,
@@ -35,7 +36,11 @@ public static class DbEndpointExtension
                             Smoker INTEGER ,
                             Gender TEXT,
                             Comment TEXT
-                        );";
+                        );
+                        CREATE TABLE File (
+                            FileId INTEGER PRIMARY KEY,
+                            Path TEXT
+                        )";
 
             var rowsAffected = await connection.ExecuteAsync(sql);
 

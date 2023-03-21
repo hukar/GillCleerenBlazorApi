@@ -83,6 +83,18 @@ public static class EmployeeEndpointExtension
             return Results.Ok(rowsAffected);
         });
 
+        app.MapPost("/files", async (IDbConnection connection, AppFile file) => {
+            var path = $"{Environment.CurrentDirectory}/Uploads/{file.Path}";
+
+            using var fileStream = File.Create(path);
+            fileStream.Write(file.Content, 0, file.Content.Length);
+
+            var sql = @"INSERT INTO File (Path) VALUES ( @path )";
+
+            var rowsAffected = await connection.ExecuteAsync(sql, new { path });
+
+        });
+
         return app;
     }
 }
